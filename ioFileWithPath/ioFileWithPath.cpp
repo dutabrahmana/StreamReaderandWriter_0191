@@ -27,4 +27,15 @@ int main() {
         // menulis dan memasukkan nilai dari 'baris' ke dalam file
         outfile << baris << endl;
     }
+    // selesai dalam menulis sekarang tutup filenya
+    outfile.close();
+
+    // membuka file dalam mode membaca
+    ifstream infile;
+
+    // menunjuk ke sebuah file
+    infile.open(NamaFile + ".txt", ios::in);
+
+    cout << endl << ">= Membuka dan membaca file " << endl;
+    // jika file ada maka
     
